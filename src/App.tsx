@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import Header from './Component/Header/Header';
+import ButtonPrimary from './Component/Button_Primary/ButtonPrimary';
+import SignIn from './Component/SignMe/SignIn';
+import ButtonTabs from './Component/ButtonTabs/ButtonTabs';
+
+
+export default function App () {
+const openMenu = function () : void {
+  alert ("hi")
 }
 
-export default App;
+const alertTwo = function(): void {
+  alert("bye")
+}
+
+
+ 
+  return (
+    <>
+
+    <Header  clickHeaderFunc = {openMenu} text = "Artem Malkin" />
+    <ButtonPrimary typeButton = "primary_btn " text = "Primary" isDisabled={false} clickFunction = {alertTwo}/>
+    <ButtonPrimary typeButton = "primary_btn_disable" text = "Primary" isDisabled={true} clickFunction = {alertTwo}/>
+    <ButtonPrimary typeButton = "secondary_btn" text = "Secondary" isDisabled={false} clickFunction = {alertTwo}/>
+    <ButtonPrimary typeButton = "secondary_btn_disable" text = "Secondary" isDisabled={true} clickFunction = {alertTwo}/>
+    <ButtonPrimary typeButton = "secondary_2_btn" text = "Secondary 2" isDisabled={false} clickFunction = {alertTwo}/>
+    <ButtonPrimary typeButton = "secondary_2_btn_disable" text = "Secondary 2" isDisabled={true} clickFunction = {alertTwo}/>
+
+    
+    <SignIn text = "Sign Me"></SignIn>
+
+    <ButtonTabs typeButton = "secondary_2_btn_disable" text = "Secondary 2" isDisabled={true} clickFunction = {alertTwo}></ButtonTabs>
+    </>
+  )
+}
+
+

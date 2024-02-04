@@ -1,0 +1,23 @@
+.secondary_btn {
+    width: 132px;
+    height: 56px;
+    background-color: #E8E8E8;
+    color: #313037;
+    font-size: 24px;
+    font-family: Inter;
+    border: none;
+}
+
+.secondary_btn:hover {
+    background-color: #DADADA;
+}
+
+.secondary_btn_disable {
+    background-color: #E8E8E8;
+    width: 132px;
+    height: 56px;
+    color: #8D8E97;
+    font-size: 24px;
+    font-family: Inter;
+    border: none;
+}

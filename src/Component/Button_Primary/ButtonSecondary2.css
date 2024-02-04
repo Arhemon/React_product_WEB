@@ -1,0 +1,33 @@
+.secondary_2_btn {
+    width: 132px;
+    height: 56px;
+    color: #FD3419;
+    font-size: 24px;
+    font-family: Inter;
+    background-color: white;
+    border: none;
+    position: relative;
+}
+
+.secondary_2_btn :hover::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid #00f;
+    pointer-events: none;
+
+}
+
+.secondary_2_btn_disable {
+    width: 132px;
+    height: 56px;
+    color: #8D8E97;
+    font-size: 24px;
+    font-family: Inter;
+    border: none;
+    background-color: white;
+
+}
