@@ -1,0 +1,39 @@
+.container_tabs_button {
+    width: 35vw;
+    border-bottom: 0.5px solid #DADADA;
+}
+
+.tabs_button {
+    width: 33%;
+    color: #313037;
+    height: 56px;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: bold;
+    color: #313037;
+    cursor: pointer;
+}
+
+.tabs_button:first-child {
+    border-bottom: 2px solid black;
+}
+
+.tabs_button:hover {
+    color: #2231AA;
+
+}
+
+.tabs_button_disable {
+    color: #8D8E97;
+    width: 33%;
+    height: 56px;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: bold;
+    color: #8D8E97;
+    cursor: pointer;
+}

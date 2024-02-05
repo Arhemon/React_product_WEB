@@ -32,7 +32,9 @@ const alertTwo = function(): void {
     
     <SignIn text = "Sign Me"></SignIn>
 
-    <ButtonTabs typeButton = "secondary_2_btn_disable" text = "Secondary 2" isDisabled={true} clickFunction = {alertTwo}></ButtonTabs>
+    <ButtonTabs typeButton = "tabs_button" text = "All" textsecond = "My favorites"  textthird = "Popular"isDisabled={true} clickFunction = {alertTwo}></ButtonTabs>
+    <ButtonTabs typeButton = "tabs_button_disable" text = "All" textsecond = "My favorites"  textthird = "Popular"isDisabled={true} clickFunction = {alertTwo}></ButtonTabs>
+
     </>
   )
 }
