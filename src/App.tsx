@@ -5,6 +5,7 @@ import Header from './Component/Header/Header';
 import ButtonPrimary from './Component/Button_Primary/ButtonPrimary';
 import SignIn from './Component/SignMe/SignIn';
 import ButtonTabs from './Component/ButtonTabs/ButtonTabs';
+import TitleInput from './Component/TitleInput/TitleInput';
 
 
 export default function App () {
@@ -34,7 +35,7 @@ const alertTwo = function(): void {
 
     <ButtonTabs typeButton = "tabs_button" text = "All" textsecond = "My favorites"  textthird = "Popular"isDisabled={true} clickFunction = {alertTwo}></ButtonTabs>
     <ButtonTabs typeButton = "tabs_button_disable" text = "All" textsecond = "My favorites"  textthird = "Popular"isDisabled={true} clickFunction = {alertTwo}></ButtonTabs>
-
+<TitleInput></TitleInput>
     </>
   )
 }
