@@ -1,0 +1,70 @@
+.container_astronaut {
+    width: 736px;
+    height: 452px;
+}
+
+.astronaut_date {
+    color: #8D8E97;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 100;
+    margin: 5px;
+    width: 300px;
+}
+
+.left_post_astranaut {
+    display: inline-block;
+    width: 400px;
+}
+
+.astronaut_title {
+    color: #313037;
+    font-size: 32px;
+    font-family: Inter;
+    margin: 5px;
+}
+
+.astronaut_text {
+    color: #8D8E97;
+    font-size: 16px;
+    font-family: Inter;
+    margin: 5px;
+    line-height: 28px;
+}
+
+.astronaut_like {
+    border: none;
+    background-color: white;
+}
+
+.astronaut_image {
+    width: 286px;
+    height: 206px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px 0px 14px 26px;
+}
+
+.low_astranaut_post {
+    width: 100%;
+}
+
+.astanaut_saved_btn {
+    border: none;
+    background-color: white;
+}
+
+.astanaut_tree_btn {
+    border: none;
+    background-color: white;
+}
+
+.low_astranaut_post {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.svg_low_astranaut {
+    padding-bottom: 10px;
+}

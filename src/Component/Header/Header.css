@@ -1,7 +1,7 @@
 .header_container {
     width: 100vw;
     height: 84px;
-    background-color: #5360CD;
+    background-color: #2231AA;
     display: inline-flex;
     justify-content: space-between;
 }
@@ -16,7 +16,7 @@
     height: 84px;
     padding: 0;
     margin: 0;
-    background-color: #5360CD;
+    background-color: #2231AA;
     border: 1px solid gray;
     border-top: 0px;
     cursor: pointer;
@@ -29,7 +29,7 @@
     height: 84px;
     padding: 0;
     margin: 0;
-    background-color: #5360CD;
+    background-color: #2231AA;
     margin-right: 20px;
 }
 
@@ -38,7 +38,7 @@
     height: 84px;
     padding: 0;
     margin: 0;
-    background-color: #5360CD;
+    background-color: #2231AA;
     border: 1px solid gray;
     border-top: 0px;
     cursor: pointer;
@@ -46,7 +46,7 @@
 }
 
 .header_icon_user {
-    background-color: #5360CD;
+    background-color: #2231AA;
     border: none;
     display: inline-flex;
     justify-content: center;
@@ -59,7 +59,7 @@
     color: white;
     margin-left: 22px;
     cursor: pointer;
-    background-color: #5360CD;
+    background-color: #2231AA;
     border: none;
 }
 
@@ -67,4 +67,5 @@
     width: 48px;
     height: 48px;
     cursor: pointer;
+
 }
