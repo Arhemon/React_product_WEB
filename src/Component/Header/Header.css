@@ -1,6 +1,6 @@
 .header_container {
     width: 100%;
-    height: 84px;
+    height: 55px;
     background-color: #2231AA;
     display: inline-flex;
     justify-content: space-between;
@@ -12,8 +12,8 @@
 }
 
 .header_left_btn {
-    width: 84px;
-    height: 84px;
+    width: 55px;
+    height: 55px;
     padding: 0;
     margin: 0;
     background-color: #2231AA;
@@ -26,7 +26,7 @@
 
 .header_right_btn {
     width: 24vw;
-    height: 84px;
+    height: 55px;
     padding: 0;
     margin: 0;
     background-color: #2231AA;
@@ -34,8 +34,8 @@
 }
 
 .header_searh_btn {
-    width: 84px;
-    height: 84px;
+    width: 55px;
+    height: 55px;
     padding: 0;
     margin: 0;
     background-color: #2231AA;
@@ -51,10 +51,10 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding-left: 33px;
-    height: 84px;
-    padding-right: 0px;
-    width: 84px;
+    height: 55px;
+
+    padding: 0px;
+    width: 55px;
 }
 
 .header_username {
@@ -81,7 +81,7 @@
 
 
 .header_right_btn_no {
-    height: 84px;
+    height: 55px;
     padding: 0;
     margin: 0;
     background-color: #2231AA;

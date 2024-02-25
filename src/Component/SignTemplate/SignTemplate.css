@@ -17,17 +17,19 @@
     margin-bottom: 10px;
     border: none;
     background-color: #E5E5E5;
-
+    font-weight: 100;
+    padding: 0;
 }
 
 .title_name {
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
+    font-weight: bold;
 }
 
 .container_text_header {
     width: 300px;
-    margin-left: 350px;
+    margin-left: 15%;
     margin-top: 30px;
     margin-bottom: 28px;
 }
@@ -35,7 +37,7 @@
 .container_form {
     width: 720px;
     margin: 0 auto;
-    height: 639px;
+    height: 500px;
 }
 
 .low_context {
@@ -52,6 +54,7 @@
     margin: 0;
     color: #8D8E97;
     margin-top: 30px;
+    font-size: 12px;
 }
 
 .a_link_legacy {
@@ -59,4 +62,6 @@
     margin: 0;
     color: #8D8E97;
     margin-top: 30px;
+    font-size: 12px;
+
 }

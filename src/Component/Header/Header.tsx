@@ -26,7 +26,7 @@ function Header({ clickHeaderFunc, text, foto, imageIcon, right_btn }: IHeader) 
                 </button>
                 <button className='header_icon_user'>
                     <img src={foto} alt='' className={imageIcon} />
-                    <button className='header_username'>{text}</button>
+                    {/* <button className='header_username'>{text}</button> */}
                 </button>
             </div>
 

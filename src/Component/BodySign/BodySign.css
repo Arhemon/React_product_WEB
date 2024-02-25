@@ -7,8 +7,8 @@
 
 .sign-up-main-frame {
     gap: 10px;
-    width: 629px;
-    height: auto;
+    width: 57%;
+    margin: auto;
     display: flex;
     padding: 25px;
     align-items: flex-start;
@@ -16,6 +16,8 @@
     border-style: solid;
     border-width: 1px;
     flex-direction: column;
+
+
 }
 
 .sign-up-content-frame {
@@ -28,7 +30,7 @@
 }
 
 .sign-up-input-frame {
-    gap: 30px;
+    gap: 9px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -74,7 +76,7 @@
 
 .sign-up-submit-frame {
     width: 544px;
-    height: 84px;
+    height: 70px;
     display: flex;
     position: relative;
     align-items: flex-start;
@@ -99,7 +101,7 @@
 
 .sign-up-submit-frame_one {
     width: 544px;
-    height: 84px;
+    height: 70px;
     display: flex;
     position: relative;
     align-items: flex-start;
@@ -123,8 +125,8 @@
 
 
 .sign-up-submit-frame_two {
-    width: 544px;
-    height: 84px;
+    width: 50%;
+    height: 70px;
     display: flex;
     position: relative;
     align-items: flex-start;
@@ -153,13 +155,15 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-right: 136px;
+
 }
 
 .sign-up-submit-button_into {
     gap: 10px;
-    width: 482px;
+    width: 366px;
     display: flex;
-    padding: 16px 32px;
+    padding: 10px 20px;
     align-items: center;
     flex-shrink: 0;
     border-radius: 2px;

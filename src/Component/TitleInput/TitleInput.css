@@ -1,5 +1,6 @@
 .title_input {
     margin: 0;
+    padding-bottom: 3px;
     font-size: 16px;
     font-family: Inter;
     font-weight: bold;
@@ -7,9 +8,10 @@
 }
 
 .container-title-form {
-    width: 540px;
-    height: 45px;
+    width: 400px;
+    height: 35px;
     border: none;
+    margin: auto;
 }
 
 .container-title-form:hover {
