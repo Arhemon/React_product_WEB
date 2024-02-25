@@ -3,11 +3,12 @@
     font-size: 16px;
     font-family: Inter;
     font-weight: bold;
+    background-color: #E5E5E5;
 }
 
 .container-title-form {
-    width: 543px;
-    height: 56px;
+    width: 540px;
+    height: 45px;
     border: none;
 }
 

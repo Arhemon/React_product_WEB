@@ -1,0 +1,13 @@
+/* Style for general boxes */
+.general-box {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for general boxes */
+.box {
+    width: 99%;
+    flex-direction: row;
+    display: flex;
+}

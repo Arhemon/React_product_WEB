@@ -9,6 +9,11 @@ import TitleInput from './Component/TitleInput/TitleInput';
 import AstronautTitle from './Component/AstronautTitle/AstronautTitle'
 import AstranautPost from './pages/AstranautPost/AstranautPost'
 import { dataSet } from './Component/AstronautTitle/data';
+import SignTemplate from './Component/SignTemplate/SignTemplate';
+import BodySign from './Component/BodySign/bodySign';
+
+
+
 
 export default function App() {
   const openMenu = function (): void {
@@ -24,7 +29,7 @@ export default function App() {
   return (
     <>
 
-      <Header clickHeaderFunc={openMenu} text="Artem Malkin" />
+      {/* <Header clickHeaderFunc={openMenu} text="Artem Malkin" />
       <ButtonPrimary typeButton="primary_btn " text="Primary" isDisabled={false} clickFunction={alertTwo} />
       <ButtonPrimary typeButton="primary_btn_disable" text="Primary" isDisabled={true} clickFunction={alertTwo} />
       <ButtonPrimary typeButton="secondary_btn" text="Secondary" isDisabled={false} clickFunction={alertTwo} />
@@ -38,9 +43,10 @@ export default function App() {
       <ButtonTabs typeButton="tabs_button" text="All" textsecond="My favorites" textthird="Popular" isDisabled={true} clickFunction={alertTwo}></ButtonTabs>
       <ButtonTabs typeButton="tabs_button_disable" text="All" textsecond="My favorites" textthird="Popular" isDisabled={true} clickFunction={alertTwo}></ButtonTabs>
       <TitleInput></TitleInput>
-      <AstranautPost dataSet={dataSet} />
+      <AstranautPost /> */}
+
+      <SignTemplate Title='Sign Up' ></SignTemplate>
+
     </>
   )
 }
-
-

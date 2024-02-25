@@ -1,9 +1,14 @@
 import { useState } from "react"
 import './TitleInput.css'
 
+interface Iinput {
+  placeText: string
+  text: string
+}
 
 
-function TitleInput() {
+
+function TitleInput({ text, placeText }: Iinput) {
   const [dataTitle, setDataTitle] = useState('Placeholder');
 
   function handleFocus(): void {
@@ -23,13 +28,13 @@ function TitleInput() {
 
   return (
     <form>
-      <p className="title_input">Title</p>
+      <p className="title_input">{text}</p>
       <input
         onChange={inputTextChange}
         style={{ border: error ? "1.5px solid red" : "" }}
         type="text"
         id="name"
-        placeholder={dataTitle}
+        placeholder={placeText}
         className="container-title-form"
         onFocus={handleFocus}
         onBlur={handleBlur}
@@ -37,9 +42,6 @@ function TitleInput() {
       />
       {error && <p className="Error_text">Text error</p>}
 
-      <p className="text_textarea">Text</p>
-
-      <textarea name="" className="textarea_unput" placeholder="Add your text"></textarea>
 
     </form>
   );
