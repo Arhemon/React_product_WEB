@@ -10,9 +10,10 @@ const openMenu = function (): void {
 
 interface ISign {
     Title: string
+    children: any
 }
 
-function SignTemplate({ Title }: ISign) {
+function SignTemplate({ Title, children }: ISign) {
     return (
         <>
             <div className="signUp_container">
@@ -21,7 +22,8 @@ function SignTemplate({ Title }: ISign) {
                     <button className="back_home">Back to home</button>
                     <p className="title_name">{Title}</p>
                 </div>
-                <form className="container_form"> <BodySign></BodySign>
+                <form className="container_form">
+                    {children}
                 </form>
                 <div className="low_context">
                     <p className="a_link_blog">©2022 Blogfolio</p>

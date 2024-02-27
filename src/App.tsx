@@ -3,7 +3,6 @@ import React from 'react';
 import './App.css';
 import Header from './Component/Header/Header';
 import ButtonPrimary from './Component/Button_Primary/ButtonPrimary';
-import SignIn from './Component/SignMe/SignIn';
 import ButtonTabs from './Component/ButtonTabs/ButtonTabs';
 import TitleInput from './Component/TitleInput/TitleInput';
 import AstronautTitle from './Component/AstronautTitle/AstronautTitle'
@@ -11,6 +10,11 @@ import AstranautPost from './pages/AstranautPost/AstranautPost'
 import { dataSet } from './Component/AstronautTitle/data';
 import SignTemplate from './Component/SignTemplate/SignTemplate';
 import BodySign from './Component/BodySign/bodySign';
+import ConfirmRegistration from './Component/ConfirmRegistration/ConfirmRegistration';
+import RegistrationConfirmTemplate from './pages/RegistrationConfirm/RegistrationConfirmTemplate';
+import SignUp from './pages/SignUp/SignUp';
+import SignIn from './pages/SignIn/SignInTemplate';
+import SignInTemplate from './pages/SignIn/SignInTemplate';
 
 
 
@@ -45,8 +49,9 @@ export default function App() {
       <TitleInput></TitleInput>
       <AstranautPost /> */}
 
-      <SignTemplate Title='Sign Up' ></SignTemplate>
-
-    </>
+      {/* <SignTemplate Title='Sign Up' ></SignTemplate> */}
+      {/* <RegistrationConfirmTemplate ></RegistrationConfirmTemplate> */}
+      {/* <SignUp ></SignUp> */}
+      <SignInTemplate></SignInTemplate>    </>
   )
 }

@@ -1,0 +1,40 @@
+.container_registration {
+    width: 600px;
+    height: 280px;
+    border: 0.5px solid gray;
+    margin-top: 10px;
+}
+
+.wrapper_registration {
+    width: 350px;
+    height: 120px;
+    padding: 40px;
+    margin: auto;
+}
+
+.registration_text {
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.registration_link {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+.registration_btn_home {
+    width: 350px;
+    height: 56px;
+    background-color: #2231AA;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-top: 40px;
+    font-weight: bold;
+}

@@ -1,7 +1,10 @@
 import './BodySign.css'
 import TitleInput from '../TitleInput/TitleInput';
 
-function BodySign() {
+interface IBodySign {
+}
+
+function BodySign({ }: IBodySign) {
     return (
         <>
             <div className='container'  >

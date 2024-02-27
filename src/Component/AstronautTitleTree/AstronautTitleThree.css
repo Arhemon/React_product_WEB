@@ -6,7 +6,7 @@
     border-top: 0.3px solid #8D8E97;
 }
 
-.astronautThree_date {
+.container_astronautThree:s .astronautThree_date {
     color: #8D8E97;
     font-size: 15px;
     font-family: Inter;
