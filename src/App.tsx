@@ -15,6 +15,13 @@ import RegistrationConfirmTemplate from './pages/RegistrationConfirm/Registratio
 import SignUp from './pages/SignUp/SignUp';
 import SignIn from './pages/SignIn/SignInTemplate';
 import SignInTemplate from './pages/SignIn/SignInTemplate';
+import SuccessTemplate from './pages/SuccessTemplate/SuccessTemplate';
+import SelectPost from './pages/SelectPost/SelectPost';
+import PostTemplate from './Component/PostTemplate/PostTemplate';
+import SignInTable from '..//src/Component/SignInTable/SignInTable';
+import AstranautPostContent from './Component/AstranautPostContent/AstranautPostContent';
+import BlogPost from './pages/BlogPost/BlogPost';
+
 
 
 
@@ -52,6 +59,18 @@ export default function App() {
       {/* <SignTemplate Title='Sign Up' ></SignTemplate> */}
       {/* <RegistrationConfirmTemplate ></RegistrationConfirmTemplate> */}
       {/* <SignUp ></SignUp> */}
-      <SignInTemplate></SignInTemplate>    </>
+      {/* <SignInTemplate></SignInTemplate> */}
+      {/* <SuccessTemplate></SuccessTemplate> */}
+
+      {/* <SelectPost></SelectPost> */}
+      {/* <PostTemplate>
+        <SignInTable />
+      </PostTemplate> */}
+
+      {/* <AstranautPostContent countPost='Post14288'></AstranautPostContent>*/}
+
+      <SelectPost></SelectPost>
+      {/* <BlogPost></BlogPost> */}
+    </>
   )
 }

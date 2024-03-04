@@ -1,10 +1,11 @@
 .container_tabs_button {
-    width: 35vw;
+    width: 1120px;
     border-bottom: 0.5px solid #DADADA;
+
 }
 
 .tabs_button {
-    width: 33%;
+    width: 180px;
     color: #313037;
     height: 56px;
     border: none;
@@ -14,6 +15,7 @@
     font-weight: bold;
     color: #313037;
     cursor: pointer;
+
 }
 
 .tabs_button:first-child {
@@ -27,7 +29,7 @@
 
 .tabs_button_disable {
     color: #8D8E97;
-    width: 33%;
+    width: 140px;
     height: 56px;
     border: none;
     background-color: white;

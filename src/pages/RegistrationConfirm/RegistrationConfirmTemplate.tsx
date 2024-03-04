@@ -12,13 +12,17 @@ function RegistrationConfirmTemplate() {
     return (
         <>
             <SignTemplate Title='Sign Up'>
-                <ConfirmRegistration />
+                <ConfirmRegistration Text='Please activate your account with the activation
+    link in the email example@gmail.com.        
+     Please, check your email'/>
             </SignTemplate>
         </>
     );
 }
 
 export default RegistrationConfirmTemplate;
+
+
 
 
 

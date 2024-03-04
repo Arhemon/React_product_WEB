@@ -32,7 +32,7 @@ function SignInTable() {
                     <div className='sign-up-submit-button' >
                         <div className='sign-up-submit-button_into'  >
                             <span className='text_submit'  >
-                                Sign Up
+                                Sign In
                             </span>
                         </div >
                         <span className='text_low'>
