@@ -20,6 +20,12 @@ function Header({ clickHeaderFunc, text, foto, imageIcon, right_btn }: IHeader) 
                 <img src={Burger} alt='' className='header_burger' />
             </button>
 
+            {/* <div className="nav-bar">
+          <Link to="/">Main</Link>
+          <Link to="/about">About</Link>
+          <Link to="/registration">Registration</Link>
+        </div> */}
+
             <div className={right_btn}>
                 <button className='header_searh_btn' >
                     <img src={search} alt='' className='header_burger' />

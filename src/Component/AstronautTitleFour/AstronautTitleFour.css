@@ -1,0 +1,99 @@
+.container_astronautFour {
+    width: 1120px;
+    height: 130px;
+    display: flex;
+
+}
+
+.container_search_four {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 0.5px solid gray;
+    margin-bottom: 25px;
+}
+
+.astronautFour_date {
+    color: var(--Background-Colors-Gray, #8D8E97);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+
+.left_post_astranautFour {
+    display: inline-block;
+    margin-left: 32px;
+}
+
+.astronautFour_title {
+    color: var(--System-Colors-Secondary, #313037);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.astronautFour_text {
+    color: #8D8E97;
+    font-size: 16px;
+    font-family: Inter;
+    margin: 5px;
+    line-height: 28px;
+}
+
+.astronaut_like {
+    border: none;
+    background-color: white;
+}
+
+.astronautFour_image {
+    width: 96px;
+    height: 96px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.low_astranautFour_post {
+
+    width: 1120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: auto;
+
+}
+
+.low_astranautFour {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1120px;
+    margin-bottom: 40px;
+
+}
+
+.astanaut_saved_btn {
+    border: none;
+    background-color: white;
+}
+
+.astanaut_tree_btn {
+    border: none;
+    background-color: white;
+}
+
+.low_astranaut_post {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.svg_low_astranaut {
+    padding-bottom: 10px;
+}

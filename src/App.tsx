@@ -21,6 +21,8 @@ import PostTemplate from './Component/PostTemplate/PostTemplate';
 import SignInTable from '..//src/Component/SignInTable/SignInTable';
 import AstranautPostContent from './Component/AstranautPostContent/AstranautPostContent';
 import BlogPost from './pages/BlogPost/BlogPost';
+import SearchResult from './Component/SearchResult/SearchResult';
+import SearchBlog from './pages/SearchBlog/SearchBlog';
 
 
 
@@ -58,7 +60,7 @@ export default function App() {
 
       {/* <SignTemplate Title='Sign Up' ></SignTemplate> */}
       {/* <RegistrationConfirmTemplate ></RegistrationConfirmTemplate> */}
-      {/* <SignUp ></SignUp> */}
+      <SignUp ></SignUp>
       {/* <SignInTemplate></SignInTemplate> */}
       {/* <SuccessTemplate></SuccessTemplate> */}
 
@@ -67,10 +69,14 @@ export default function App() {
         <SignInTable />
       </PostTemplate> */}
 
-      {/* <AstranautPostContent countPost='Post14288'></AstranautPostContent>*/}
+      {/* <AstranautPostContent countPost='Post14288'></AstranautPostContent> */}
 
       <SelectPost></SelectPost>
-      {/* <BlogPost></BlogPost> */}
+      <BlogPost></BlogPost>
+
+      {/* <SearchResult></SearchResult> */}
+
+      {/* <SearchBlog></SearchBlog> */}
     </>
   )
 }
