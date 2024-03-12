@@ -23,6 +23,7 @@ import AstranautPostContent from './Component/AstranautPostContent/AstranautPost
 import BlogPost from './pages/BlogPost/BlogPost';
 import SearchResult from './Component/SearchResult/SearchResult';
 import SearchBlog from './pages/SearchBlog/SearchBlog';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 
@@ -60,7 +61,7 @@ export default function App() {
 
       {/* <SignTemplate Title='Sign Up' ></SignTemplate> */}
       {/* <RegistrationConfirmTemplate ></RegistrationConfirmTemplate> */}
-      <SignUp ></SignUp>
+      {/* <SignUp ></SignUp> */}
       {/* <SignInTemplate></SignInTemplate> */}
       {/* <SuccessTemplate></SuccessTemplate> */}
 
@@ -71,12 +72,22 @@ export default function App() {
 
       {/* <AstranautPostContent countPost='Post14288'></AstranautPostContent> */}
 
-      <SelectPost></SelectPost>
-      <BlogPost></BlogPost>
+      {/* <SelectPost></SelectPost>
+      <BlogPost></BlogPost> */}
 
       {/* <SearchResult></SearchResult> */}
 
       {/* <SearchBlog></SearchBlog> */}
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<BlogPost />}></Route>
+          <Route path="/registration" element={<SignIn />}></Route>
+          <Route path="/search" element={<SearchBlog />}></Route>
+
+        </Routes>
+      </BrowserRouter>
+
     </>
   )
 }
