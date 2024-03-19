@@ -1,4 +1,6 @@
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './AstronautTitleThree.css';
+import SearchBlog from '../../pages/SearchBlog/SearchBlog';
 
 
 interface IAstronautTitleThree {
@@ -14,7 +16,6 @@ function AstronautTitleThree({ cardTitle, cardDate, source }: IAstronautTitleThr
 
     return (
         <>
-
             <div className='container_astronautThree'>
                 <div className='left_post_astranautThree'>
                     <h3 className='astronautThree_date'>{cardDate}</h3>
@@ -55,7 +56,6 @@ function AstronautTitleThree({ cardTitle, cardDate, source }: IAstronautTitleThr
                 </div>
 
             </div>
-
         </>
     )
 }

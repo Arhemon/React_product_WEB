@@ -27,6 +27,7 @@
 
 .search-container {
     position: relative;
+    display: flex;
 }
 
 .header_search_btn {
@@ -41,18 +42,9 @@
 
 
 
-.search-input {
-    position: relative;
-    top: -74%;
-    left: 0;
-    display: none;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+.search-input {}
 
 .search-container.active .search-input {
-    display: block;
     padding-right: 50px;
 }
 

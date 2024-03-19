@@ -1,5 +1,6 @@
 import './SignInTable.css'
 import TitleInput from '../TitleInput/TitleInput';
+import { Link } from 'react-router-dom';
 
 interface ISignInTable {
 }
@@ -31,9 +32,13 @@ function SignInTable() {
                     </div >
                     <div className='sign-up-submit-button' >
                         <div className='sign-up-submit-button_into'  >
-                            <span className='text_submit'  >
-                                Sign In
-                            </span>
+                            <Link to="/" >
+
+                                <span className='text_submit'  >
+                                    Sign In
+                                </span>
+                            </Link>
+
                         </div >
                         <span className='text_low'>
                             <button className='text_already'>

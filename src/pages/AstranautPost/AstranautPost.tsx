@@ -3,12 +3,14 @@ import AstronautTitle from '../../Component/AstronautTitle/AstronautTitle'
 import { dataSet } from '../../Component/AstronautTitle/data';
 import AstronautTitleTwo from '../..//Component/AstronautTitleTwo/AstronautTitleTwo'
 import AstronautTitleThree from '../../Component/AstronautTitleTree/AstronautTitleTree';
-
+import { Link } from 'react-router-dom';
 function AstranautPost() {
     return (
         <div className="general-box">
             <div className="box">
-                <AstronautTitle cardDate={dataSet[0].date} cardTitle={dataSet[0].title} postText={dataSet[0].description} source={dataSet[0].image} ></AstronautTitle>
+                <Link to="/selectpost" >
+                    <AstronautTitle cardDate={dataSet[0].date} cardTitle={dataSet[0].title} postText={dataSet[0].description} source={dataSet[0].image} ></AstronautTitle>
+                </Link>
                 <div className="box-add">
                     <AstronautTitleThree cardDate={dataSet[1].date} cardTitle={dataSet[1].title} source={dataSet[1].image}></AstronautTitleThree>
                     <AstronautTitleThree cardDate={dataSet[2].date} cardTitle={dataSet[2].title} source={dataSet[2].image}></AstronautTitleThree>

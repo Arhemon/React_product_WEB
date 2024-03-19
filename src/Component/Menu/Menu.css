@@ -1,0 +1,69 @@
+.container_menu {
+    display: flex;
+    width: 236px;
+    height: 85vh;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 55px;
+    background-color: white;
+}
+
+.btn_menu {
+    width: 236px;
+    height: 83px;
+    border: none;
+    border-bottom: 0.5px solid #E8E8E8;
+    color: #2231AA;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.low_two_btn {
+    width: 236px;
+    height: 83px;
+    display: flex;
+    flex-direction: row;
+}
+
+.btn_light {
+    width: 118px;
+    height: 83px;
+    border: none;
+    background-color: white;
+    border-top: 0.5px solid #E8E8E8;
+}
+
+.btn_dark {
+    width: 118px;
+    height: 83px;
+    border: none;
+    background-color: white;
+    border-top: 0.5px solid #E8E8E8;
+    border-left: 0.5px solid #E8E8E8;
+}
+
+.sign_in_btn {
+    color: #313037;
+    margin: 0;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    width: 236px;
+    height: 83px;
+    background: var(--Contextual-Colors-Light, #E8E8E8);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}

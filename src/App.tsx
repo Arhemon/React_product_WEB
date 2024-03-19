@@ -24,6 +24,7 @@ import BlogPost from './pages/BlogPost/BlogPost';
 import SearchResult from './Component/SearchResult/SearchResult';
 import SearchBlog from './pages/SearchBlog/SearchBlog';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Menu from './Component/Menu/Menu';
 
 
 
@@ -84,10 +85,13 @@ export default function App() {
           <Route path="/" element={<BlogPost />}></Route>
           <Route path="/registration" element={<SignIn />}></Route>
           <Route path="/search" element={<SearchBlog />}></Route>
+          <Route path="/Menu" element={<Menu></Menu>} />
+          <Route path="/signin" element={<SignInTemplate></SignInTemplate>} />
+          <Route path="/Home" element={<BlogPost></BlogPost>} />
+          <Route path="/selectpost" element={<SelectPost></SelectPost>} />
 
         </Routes>
       </BrowserRouter>
-
     </>
   )
 }
