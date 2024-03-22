@@ -101,7 +101,29 @@
     height: 55px;
 
     padding: 0px;
+}
+
+.header_icon_user_signIn {
+    background-color: #2231AA;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+
+    padding: 0px;
+    width: 200px;
+}
+
+.header_icon_user_no {
+    background-color: #2231AA;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
     width: 55px;
+    padding: 0px;
 }
 
 .header_username {

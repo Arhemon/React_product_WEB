@@ -8,6 +8,8 @@ import Account from '..//../image/Account.png'
 import { Link } from 'react-router-dom';
 import Menu from '../Menu/Menu';
 import toggleWindow from '..//Menu/Menu'
+import { connect } from 'react-redux'; // Подключаем connect
+import { buttonClick } from '../../action/action';
 
 interface IHeader {
     clickHeaderFunc: any
@@ -15,9 +17,12 @@ interface IHeader {
     foto: any
     imageIcon: string,
     right_btn: string,
+    buttonClick: () => void;
+    isLoggedIn: boolean;
+
 }
 
-function Header({ clickHeaderFunc, text, foto, imageIcon, right_btn }: IHeader) {
+function Header({ isLoggedIn, clickHeaderFunc, text, foto, imageIcon, right_btn }: IHeader) {
 
 
     const [isActive, setIsActive] = useState(false);
@@ -27,20 +32,14 @@ function Header({ clickHeaderFunc, text, foto, imageIcon, right_btn }: IHeader) 
     };
 
     const [isOpen, setIsOpen] = useState(false);
-    // const handleSignIn = (userData: any) => {
-    //     setUser({
-    //         isLoggedIn: true,
-    //         firstName: userData.firstName,
-    //         lastName: userData.lastName,
-    //         photo: userData.photo
-    //     });
-    // };
-    const [user, setUser] = useState({
-        isLoggedIn: false,
-        firstName: '',
-        lastName: '',
-        photo: null
-    });
+
+    const handleButtonClicSign = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const handleSignIn = () => {
+        buttonClick();
+    };
     return (
         <div className='header_container'>
             <button onClick={() => setIsOpen(!isOpen)} className='header_left_btn'>
@@ -71,14 +70,20 @@ function Header({ clickHeaderFunc, text, foto, imageIcon, right_btn }: IHeader) 
                         />
                     )}
                 </div>
-                <button className='header_icon_user'>
-                    {user.isLoggedIn ? (
+                <button onClick={handleSignIn} className='header_icon_user'>
+                    {isLoggedIn ? (
                         <>
-                            <img src={Account} alt='User' className={imageIcon} />
-                            <span className='header_username'>{user.firstName} {user.lastName}</span>
+                            <div className='header_icon_user_signIn'>
+                                <img src={Account} alt='User' className='imageIcon' />
+                                <span className='header_username'>Artem Malkin</span>
+                            </div>
+
                         </>
                     ) : (
-                        <img src={User} alt='Account' className={imageIcon} />
+                        <div className='header_icon_user_no'>
+                            <img src={User} alt='Account' className='imageIcon' />
+                        </div>
+
                     )}
                 </button>
             </div>
@@ -86,6 +91,13 @@ function Header({ clickHeaderFunc, text, foto, imageIcon, right_btn }: IHeader) 
         </div>
     );
 }
+const mapStateToProps = (state: any) => ({
+    isLoggedIn: state.isLoggedIn,
+});
 
-export default Header;
+const mapDispatchToProps = {
+    buttonClick,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
 

@@ -25,60 +25,18 @@ import SearchResult from './Component/SearchResult/SearchResult';
 import SearchBlog from './pages/SearchBlog/SearchBlog';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Menu from './Component/Menu/Menu';
+import { connect } from 'react-redux';
+import { buttonClick } from './action/action';
 
 
 
 
 
 export default function App() {
-  const openMenu = function (): void {
-    alert("hi")
-  }
-
-  const alertTwo = function (): void {
-    alert("bye")
-  }
-
 
 
   return (
     <>
-
-      {/* <Header clickHeaderFunc={openMenu} text="Artem Malkin" />
-      <ButtonPrimary typeButton="primary_btn " text="Primary" isDisabled={false} clickFunction={alertTwo} />
-      <ButtonPrimary typeButton="primary_btn_disable" text="Primary" isDisabled={true} clickFunction={alertTwo} />
-      <ButtonPrimary typeButton="secondary_btn" text="Secondary" isDisabled={false} clickFunction={alertTwo} />
-      <ButtonPrimary typeButton="secondary_btn_disable" text="Secondary" isDisabled={true} clickFunction={alertTwo} />
-      <ButtonPrimary typeButton="secondary_2_btn" text="Secondary 2" isDisabled={false} clickFunction={alertTwo} />
-      <ButtonPrimary typeButton="secondary_2_btn_disable" text="Secondary 2" isDisabled={true} clickFunction={alertTwo} />
-
-
-      <SignIn text="Sign Me"></SignIn>
-
-      <ButtonTabs typeButton="tabs_button" text="All" textsecond="My favorites" textthird="Popular" isDisabled={true} clickFunction={alertTwo}></ButtonTabs>
-      <ButtonTabs typeButton="tabs_button_disable" text="All" textsecond="My favorites" textthird="Popular" isDisabled={true} clickFunction={alertTwo}></ButtonTabs>
-      <TitleInput></TitleInput>
-      <AstranautPost /> */}
-
-      {/* <SignTemplate Title='Sign Up' ></SignTemplate> */}
-      {/* <RegistrationConfirmTemplate ></RegistrationConfirmTemplate> */}
-      {/* <SignUp ></SignUp> */}
-      {/* <SignInTemplate></SignInTemplate> */}
-      {/* <SuccessTemplate></SuccessTemplate> */}
-
-      {/* <SelectPost></SelectPost> */}
-      {/* <PostTemplate>
-        <SignInTable />
-      </PostTemplate> */}
-
-      {/* <AstranautPostContent countPost='Post14288'></AstranautPostContent> */}
-
-      {/* <SelectPost></SelectPost>
-      <BlogPost></BlogPost> */}
-
-      {/* <SearchResult></SearchResult> */}
-
-      {/* <SearchBlog></SearchBlog> */}
 
       <BrowserRouter>
         <Routes>
