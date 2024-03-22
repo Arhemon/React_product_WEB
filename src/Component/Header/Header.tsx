@@ -8,8 +8,8 @@ import Account from '..//../image/Account.png'
 import { Link } from 'react-router-dom';
 import Menu from '../Menu/Menu';
 import toggleWindow from '..//Menu/Menu'
-import { connect } from 'react-redux'; // Подключаем connect
-import { buttonClick } from '../../action/action';
+import { connect, useDispatch, useSelector } from 'react-redux'; // Подключаем connect
+import { clickSignIn } from '../../Slice/actionRedux';
 
 interface IHeader {
     clickHeaderFunc: any
@@ -17,12 +17,9 @@ interface IHeader {
     foto: any
     imageIcon: string,
     right_btn: string,
-    buttonClick: () => void;
-    isLoggedIn: boolean;
-
 }
 
-function Header({ isLoggedIn, clickHeaderFunc, text, foto, imageIcon, right_btn }: IHeader) {
+function Header({ clickHeaderFunc, text, foto, imageIcon, right_btn }: IHeader) {
 
 
     const [isActive, setIsActive] = useState(false);
@@ -36,9 +33,11 @@ function Header({ isLoggedIn, clickHeaderFunc, text, foto, imageIcon, right_btn 
     const handleButtonClicSign = () => {
         setIsOpen(!isOpen);
     };
+    const dispatch = useDispatch();
+    const isLoggedIn = useSelector((state: any) => state.clickSignIn.isLoggedIn);
 
     const handleSignIn = () => {
-        buttonClick();
+        dispatch(clickSignIn(true));
     };
     return (
         <div className='header_container'>
@@ -91,13 +90,7 @@ function Header({ isLoggedIn, clickHeaderFunc, text, foto, imageIcon, right_btn 
         </div>
     );
 }
-const mapStateToProps = (state: any) => ({
-    isLoggedIn: state.isLoggedIn,
-});
 
-const mapDispatchToProps = {
-    buttonClick,
-};
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default Header;
 

@@ -3,19 +3,21 @@ import TitleInput from '../TitleInput/TitleInput';
 import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 
-import { connect } from 'react-redux';
-import { buttonClick } from '..//../action/action';
+import { connect, useDispatch } from 'react-redux';
+import { clickSignIn } from '../../Slice/actionRedux';
 
 interface ISignInTableProps {
-    buttonClicked: boolean;
+    handleClick: boolean;
     buttonClick: () => void;
 }
-function SignInTable(props: ISignInTableProps) {
+
+function SignInTable() {
+
+    const dispatch = useDispatch();
+
     const handleClick = () => {
-        props.buttonClick();
+        dispatch(clickSignIn(true));
     };
-
-
     return (
         <>
 
@@ -63,15 +65,7 @@ function SignInTable(props: ISignInTableProps) {
     );
 }
 
-const mapStateToProps = (state: any) => ({
-    buttonClicked: state.buttonClicked,
-});
 
-const mapDispatchToProps = {
-    buttonClick,
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(SignInTable);
-
+export default connect()(SignInTable);
 
 

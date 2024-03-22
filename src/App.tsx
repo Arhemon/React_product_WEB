@@ -25,8 +25,8 @@ import SearchResult from './Component/SearchResult/SearchResult';
 import SearchBlog from './pages/SearchBlog/SearchBlog';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Menu from './Component/Menu/Menu';
-import { connect } from 'react-redux';
-import { buttonClick } from './action/action';
+import { connect, useDispatch } from 'react-redux';
+import { clickSignIn } from './Slice/actionRedux';
 
 
 
