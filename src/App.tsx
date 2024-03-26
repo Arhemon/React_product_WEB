@@ -41,12 +41,14 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<BlogPost />}></Route>
+          <Route path="/:id" element={<SelectPost />}></Route>
+
           <Route path="/registration" element={<SignIn />}></Route>
           <Route path="/search" element={<SearchBlog />}></Route>
           <Route path="/Menu" element={<Menu></Menu>} />
           <Route path="/signin" element={<SignInTemplate></SignInTemplate>} />
           <Route path="/Home" element={<BlogPost></BlogPost>} />
-          <Route path="/selectpost" element={<SelectPost></SelectPost>} />
+          {/* <Route path="/selectpost" element={<SelectPost></SelectPost>} /> */}
 
         </Routes>
       </BrowserRouter>

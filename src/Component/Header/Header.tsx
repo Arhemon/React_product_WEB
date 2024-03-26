@@ -10,6 +10,7 @@ import Menu from '../Menu/Menu';
 import toggleWindow from '..//Menu/Menu'
 import { connect, useDispatch, useSelector } from 'react-redux'; // Подключаем connect
 import { clickSignIn } from '../../Slice/actionRedux';
+import { log } from 'console';
 
 interface IHeader {
     clickHeaderFunc: any
@@ -34,11 +35,18 @@ function Header({ clickHeaderFunc, text, foto, imageIcon, right_btn }: IHeader) 
         setIsOpen(!isOpen);
     };
     const dispatch = useDispatch();
-    const isLoggedIn = useSelector((state: any) => state.clickSignIn.isLoggedIn);
+    const isLoggedIn = useSelector((state: any) => state.signIn.signIn);
 
     const handleSignIn = () => {
         dispatch(clickSignIn(true));
     };
+
+    const handleLogout = () => {
+        dispatch(clickSignIn(false));
+    };
+
+
+
     return (
         <div className='header_container'>
             <button onClick={() => setIsOpen(!isOpen)} className='header_left_btn'>
@@ -69,7 +77,7 @@ function Header({ clickHeaderFunc, text, foto, imageIcon, right_btn }: IHeader) 
                         />
                     )}
                 </div>
-                <button onClick={handleSignIn} className='header_icon_user'>
+                <button className='header_icon_user'>
                     {isLoggedIn ? (
                         <>
                             <div className='header_icon_user_signIn'>

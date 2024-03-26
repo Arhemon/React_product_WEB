@@ -3,6 +3,9 @@ import './Menu.css'
 import SignInTemplate from '../../pages/SignIn/SignInTemplate';
 import BlogPost from '../../pages/BlogPost/BlogPost';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { clickLogOut, clickSignIn } from '../../Slice/actionRedux';
+import { log } from 'console';
 
 
 function Menu() {
@@ -12,6 +15,19 @@ function Menu() {
     const signInBtn = () => {
         setIsSign(!isSign);
     };
+
+    const isLoggedIn = useSelector((state: any) => state.signIn.signIn);
+    const dispatch = useDispatch();
+
+    const handleSignInOut = () => {
+        dispatch(clickSignIn(!isLoggedIn));
+    };
+    const handleLogout = () => {
+        dispatch(clickLogOut(false));
+    };
+
+
+
     return (
 
         <>
@@ -34,10 +50,15 @@ function Menu() {
 
 
                     </div>
-                    <Link to="/signin" >
-                        <p className='sign_in_btn' >Sign In</p>
-                    </Link>
 
+
+                    {isLoggedIn ? (
+                        <button className='sign_in_btn' onClick={handleLogout}>Log Out</button>
+                    ) : (
+                        <Link to="/signin">
+                            <button className='sign_in_btn' >Sign In</button>
+                        </Link>
+                    )}
 
                 </div>
             </div>

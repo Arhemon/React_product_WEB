@@ -6,6 +6,7 @@ import App from '../../App';
 import user from '..//../image/user.png'
 import PostTemplate from '../../Component/PostTemplate/PostTemplate';
 import AstranautPostContent from '../../Component/AstranautPostContent/AstranautPostContent';
+import { dataSet } from '../../Component/AstronautTitle/data';
 
 
 
@@ -17,7 +18,7 @@ function SelectPost() {
     return (
         <>
             <PostTemplate>
-                <AstranautPostContent countPost='14288' />
+                <AstranautPostContent countPost={dataSet[0].id.toString()} />
             </PostTemplate>
         </>
     );

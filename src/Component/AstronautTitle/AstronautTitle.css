@@ -6,6 +6,12 @@
 
 }
 
+.like_number {
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+}
+
 .astronaut_date {
     color: #8D8E97;
     font-size: 16px;
